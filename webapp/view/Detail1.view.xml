@@ -1,0 +1,46 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns:core="sap.ui.core" xmlns="sap.m" xmlns:layout="sap.ui.layout" xmlns:f="sap.ui.layout.form"
+	xmlns:file="sap.ui.unified" height="100%" controllerName="sapui101sapui101.controller.Home">
+	<Page showHeader="false">
+		<layout:BlockLayout background="Default">
+			<layout:BlockLayoutRow>
+				<layout:BlockLayoutCell>
+					<Text text="Personal Info:"/>
+				</layout:BlockLayoutCell>
+			</layout:BlockLayoutRow>
+			<layout:BlockLayoutRow>
+				<layout:BlockLayoutCell>
+					<f:SimpleForm editable="true" backgroundDesign="Transparent" layout="GridLayout">
+						<Label text="First Name"/>
+						<Input type="Text" placeholder="Enter your First Name ..."/>
+						<Label text="Last Name"/>
+						<Input type="Text" placeholder="Enter your Last Name ..."/>
+						<Label text="Profession"/>
+						<Input type="Text" placeholder="Senior Software developer"/>
+						<Label text="Address"/>
+						<HBox>
+							<Input type="Text" placeholder="City"/>
+							<Input class="sapUiTinyMarginBeginEnd" type="Text" placeholder="State"/>
+							<Input type="Text" placeholder="ZipCode"/>
+						</HBox>
+						<Label text="Phone"/>
+						<Input type="Text" placeholder="1234567890"/>
+						<Label text="Email"/>
+						<Input type="Text" placeholder="xyz@domain.com"/>
+						<Label text="Resume"/>
+						<f:customData>
+							<core:CustomData key="w5g.dt.editable" value="false" id="__data16"/>
+						</f:customData>
+					</f:SimpleForm>
+				</layout:BlockLayoutCell>
+			</layout:BlockLayoutRow>
+		</layout:BlockLayout>
+		<footer>
+			<OverflowToolbar>
+				<!--<contentLeft>-->
+				<Button text="next"/>
+				<!--</contentLeft>		-->
+			</OverflowToolbar>
+		</footer>
+		<content></content>
+	</Page>
+</mvc:View>

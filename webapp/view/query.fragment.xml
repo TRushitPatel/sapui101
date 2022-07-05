@@ -1,0 +1,11 @@
+<core:FragmentDefinition xmlns:core="sap.ui.core" xmlns="sap.m">
+	<CustomListItem id="id_query_item" class="query">
+		<HBox>
+			<core:Icon class="sapUiSmallMargin" size="1rem" src="sap-icon://attachment-photo"/>
+			<VBox class="sapUiTinyMarginBegin sapUiSmallMarginTopBottom">
+				<Text text="{text}"/>
+				<!--<Label text="{ProductId}"/>-->
+			</VBox>
+		</HBox>
+	</CustomListItem>
+</core:FragmentDefinition>

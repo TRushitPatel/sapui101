@@ -1,0 +1,17 @@
+<mvc:View controllerName="sapui101sapui101.controller.Home" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc"
+	displayBlock="true" xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:layout="sap.ui.layout" xmlns:tnt="sap.tnt">
+	<Page>
+		<layout:BlockLayout>
+			<layout:BlockLayoutRow>
+				<layout:BlockLayoutCell>
+					<Text text="Professional Info"/>
+				</layout:BlockLayoutCell>
+			</layout:BlockLayoutRow>
+		</layout:BlockLayout>
+		<footer>
+			<OverflowToolbar>
+				<Button text="next"/>
+			</OverflowToolbar>
+		</footer>
+	</Page>
+</mvc:View>

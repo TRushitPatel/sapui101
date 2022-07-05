@@ -1,0 +1,5 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core">
+	<HBox alignContent="Center" alignItems="Center" class="sapUiContentPadding" backgroundDesign="Solid">
+		<Text text="Chat with me"/>
+	</HBox>
+</core:FragmentDefinition>

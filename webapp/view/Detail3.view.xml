@@ -1,0 +1,8 @@
+<mvc:View xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m" xmlns:core="sap.ui.core"
+	xmlns:l="sap.ui.layout" xmlns:tnt="sap.tnt" xmlns:cst="sapui101sapui101.controller.control">
+	<Page>
+		<content>
+			<cst:CustomChatBot></cst:CustomChatBot>
+		</content>
+	</Page>
+</mvc:View>

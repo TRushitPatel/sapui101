@@ -1,0 +1,21 @@
+<core:FragmentDefinition xmlns:core="sap.ui.core" xmlns="sap.m">
+	
+	<CustomListItem id="id_checkboxListItem">
+		<HBox>
+			<Text text="this is a checkbox list item"/>
+			<HBox>
+				<ComboBox
+					items="model>/items">
+					
+					<core:dependents>
+						
+						
+					</core:dependents><!-- sap.ui.core.Element -->
+					
+				</ComboBox>
+			</HBox>
+		</HBox>
+	</CustomListItem>
+		
+	
+</core:FragmentDefinition>

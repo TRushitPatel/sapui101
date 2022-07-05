@@ -1,0 +1,4 @@
+<core:FragmentDefinition xmlns:core="sap.ui.core" xmlns="sap.m">
+	<CustomListItem id="id_response_item" class="response">
+	</CustomListItem>
+</core:FragmentDefinition>

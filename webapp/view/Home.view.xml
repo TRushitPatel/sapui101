@@ -1,0 +1,32 @@
+<mvc:View height="100%" controllerName="sapui101sapui101.controller.Home" xmlns:mvc="sap.ui.core.mvc" xmlns:core="sap.ui.core" xmlns="sap.m"
+	xmlns:layout="sap.ui.layout" xmlns:f="sap.ui.layout.form" xmlns:file="sap.ui.unified">
+	<Page showHeader="false" backgroundDesign="Transparent">
+		<layout:BlockLayout background="Default">
+			<layout:BlockLayoutRow>
+				<layout:BlockLayoutCell>
+					<Text text="Upload your resume to create a resume template:"/>
+				</layout:BlockLayoutCell>
+			</layout:BlockLayoutRow>
+			<layout:BlockLayoutRow>
+				<layout:BlockLayoutCell>
+					<f:SimpleForm editable="true" backgroundDesign="Transparent" layout="GridLayout">
+						<Label text="Resume"/>
+						<HBox>
+							<file:FileUploader id="id_file" multiple="false" buttonText="Browse.." fileType="PDF"/>
+							<Button visible="false" class="sapUiTinyMarginBegin" text="upload"/>
+						</HBox>
+					</f:SimpleForm>
+				</layout:BlockLayoutCell>
+			</layout:BlockLayoutRow>
+		</layout:BlockLayout>
+		<footer>
+			<OverflowToolbar>
+				<Button text="Previous"/>
+				<ToolbarSeparator/>
+				<ToolbarSpacer/>
+				<ToolbarSeparator/>
+				<Button text="Next" press="toDetail1"/>
+			</OverflowToolbar>
+		</footer>
+	</Page>
+</mvc:View>

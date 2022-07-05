@@ -1,0 +1,69 @@
+<mvc:View controllerName="sapui101sapui101.controller.App" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc"
+	displayBlock="true" xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:l="sap.ui.layout" xmlns:tnt="sap.tnt">
+	<tnt:ToolPage id="app" sideExpanded="true">
+		<tnt:header>
+			<tnt:ToolHeader>
+				<Button icon="sap-icon://menu2" press="onMenu" type="Transparent"></Button>
+				<MenuButton text="File" type="Transparent">
+					<menu>
+						<Menu>
+							<MenuItem text="basic">
+								<items>
+									<MenuItem text="Click me"/>
+								</items>
+							</MenuItem>
+						</Menu>
+					</menu>
+				</MenuButton>
+			</tnt:ToolHeader>
+		</tnt:header>
+		<tnt:sideContent>
+			<tnt:SideNavigation itemSelect="onItemSelect">
+				<tnt:NavigationList>
+					<tnt:NavigationListItem text="Upload Resume" icon="sap-icon://business-card" key="main"/>
+					<tnt:NavigationListItem text="Fill Details" icon="sap-icon://form">
+						<tnt:NavigationListItem text="Personal Info" key="detail1"/>
+						<tnt:NavigationListItem text="Employment Info" key="detail2"/>
+					</tnt:NavigationListItem>
+				</tnt:NavigationList>
+				<tnt:fixedItem>
+					<tnt:NavigationList>
+						<tnt:NavigationListItem text="My Profile" id="id_MyProfile" key="MyProfile"/>
+						<tnt:NavigationListItem text="Chat with me" id="id_ChatWithMe" key="ChatWithMe"/>
+						
+					</tnt:NavigationList>
+				</tnt:fixedItem>
+			</tnt:SideNavigation>
+		</tnt:sideContent>
+		<tnt:mainContents>
+			<!--<NavContainer id="id_navContainer" initialPage="page2">-->
+			<!--	<pages>-->
+			<!--		<ScrollContainer id="root1" horizontal="false" vertical="true" height="100%">-->
+			<!--			<Text text="This is the root page"/>-->
+			<!--		</ScrollContainer>-->
+			<!--		<ScrollContainer id="page1" horizontal="false" vertical="true" height="100%">-->
+			<!--			<Text text="This is the first page"/>-->
+			<!--		</ScrollContainer>-->
+			<!--		<ScrollContainer id="page2" horizontal="false" vertical="true" height="100%">-->
+			<!--			<Text-->
+			<!--				text="Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium architecto autem dicta dolor dolores dolorum earum enim error esse eum ex exercitationem explicabo facilis fugit ipsum maiores, necessitatibus nemo nihil numquam odio officiis optio possimus quas qui quod quos, reiciendis similique sunt tempore tenetur ut vitae voluptate. Ab accusantium, aperiam, asperiores dolores fuga id incidunt itaque numquam placeat quidem recusandae veritatis voluptatibus."/>-->
+			<!--		</ScrollContainer>-->
+			<!--		<ScrollContainer id="root2" horizontal="false" vertical="true" height="100%">-->
+			<!--			<Text text="This is the root page of the second element"/>-->
+			<!--		</ScrollContainer>-->
+			<!--	</pages>-->
+			<App>
+				<pages>
+					<Page showFooter="false" showHeader="false">
+						<VBox>
+							<!--<core:Fragment id="id_ChatbotHeader" fragmentName="sapui101sapui101.view.ChatbotHeader" type="XML"/>-->
+							<!--<core:Fragment id="id_BreadCrumbs" fragmentName="sapui101sapui101.view.BreadCrumbs" type="XML"/>-->
+							<App id="mainContents"/>
+						</VBox>
+					</Page>
+				</pages>
+			</App>
+		<!--</NavContainer>-->
+	</tnt:mainContents>
+</tnt:ToolPage>
+</mvc:View>

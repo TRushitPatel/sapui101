@@ -1,0 +1,35 @@
+{
+	"details": [{
+		"Info": "Personal Details",
+		"Value": "Completed",
+		"Action": "Update",
+		"more": [{
+			"Info": "First Name",
+			"Value": "Trushit"
+		}, {
+			"Info": "Last Name",
+			"Value": "Patel"
+		}, {
+			"Info": "Profession",
+			"Value": "Senior Software Engineer"
+		}, {
+			"Info": "Address",
+			"Value": "Balasnior, Gujarat, 388265",
+			"more": [{
+				"Info": "City",
+				"Value": "Balasnior",
+				"Action": "Update"
+			},
+			{
+				"Info": "State",
+				"Value": "Gujarat",
+				"Action": "Update"
+			},
+			{
+				"Info": "Zip Code",
+				"Value": "388265",
+				"Action": "Update"
+			}]
+		}]
+	}]
+}

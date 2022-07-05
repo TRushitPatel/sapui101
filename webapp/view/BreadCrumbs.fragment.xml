@@ -1,0 +1,9 @@
+<core:FragmentDefinition xmlns:core="sap.ui.core" xmlns="sap.m">
+	<HBox alignContent="Center" class="sapUiContentPadding" backgroundDesign="Solid">
+		<Breadcrumbs id="id_breadCrumbs">
+			<links>
+				<Link text="Resume" press="onLinkPress"/>
+			</links>
+		</Breadcrumbs>
+	</HBox>
+</core:FragmentDefinition>

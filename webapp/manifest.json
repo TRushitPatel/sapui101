@@ -1,0 +1,142 @@
+{
+	"_version": "1.7.0",
+	"sap.app": {
+		"id": "sapui101sapui101",
+		"type": "application",
+		"i18n": "i18n/i18n.properties",
+		"applicationVersion": {
+			"version": "1.2.0"
+		},
+		"title": "{{appTitle}}",
+		"description": "{{appDescription}}",
+		"sourceTemplate": {
+			"id": "ui5template.basicSAPUI5ApplicationProject",
+			"version": "1.40.12"
+		}
+	},
+	"sap.ui": {
+		"technology": "UI5",
+		"icons": {
+			"icon": "",
+			"favIcon": "",
+			"phone": "",
+			"phone@2": "",
+			"tablet": "",
+			"tablet@2": ""
+		},
+		"deviceTypes": {
+			"desktop": true,
+			"tablet": true,
+			"phone": true
+		},
+		"supportedThemes": ["sap_hcb", "sap_belize"]
+	},
+	"sap.ui5": {
+		"rootView": {
+			"viewName": "sapui101sapui101.view.App",
+			"type": "XML",
+			"async": true,
+			"id": "app"
+		},
+		"dependencies": {
+			"minUI5Version": "1.30.0",
+			"libs": {
+				"sap.ui.core": {},
+				"sap.m": {},
+				"sap.ui.layout": {},
+				"sap.ushell": {},
+				"sap.collaboration": {},
+				"sap.ui.comp": {},
+				"sap.uxap": {}
+			}
+		},
+		"contentDensities": {
+			"compact": true,
+			"cozy": true
+		},
+		"models": {
+			"i18n": {
+				"type": "sap.ui.model.resource.ResourceModel",
+				"settings": {
+					"bundleName": "sapui101sapui101.i18n.i18n"
+				}
+			},
+			"tree":{
+				"type":"sap.ui.model.json.JSONModel",
+				"uri":"model/tree.json"
+			}
+		},
+		"resources": {
+			"css": [{
+				"uri": "css/style.css"
+			}]
+		},
+		"routing": {
+			"config": {
+				"controlId": "mainContents",
+				"controlAggregation": "pages",
+				"async": true,
+				"routerClass": "sap.m.routing.Router",
+				"viewType": "XML",
+				"viewPath": "sapui101sapui101.view",
+				"transition": "slide"
+			},
+
+			"routes": [{
+				"pattern": "",
+				"name": "main",
+				"target": "home"
+			}, {
+				"pattern": "personalInfo",
+				"name": "detail1",
+				"target": "detail1"
+			}, {
+				"pattern": "professionalInfo",
+				"name": "detail2",
+				"target": "detail2"
+			},
+			{
+				"pattern":"newChatbot",
+				"name":"detail3",
+				"target":"detail3"
+			}
+			,{
+				"pattern": "ChatBot",
+				"name": "ChatWithMe",
+				"target": "ChatBot"
+			},{
+				"pattern":"myProfile",
+				"name":"MyProfile",
+				"target":"MyProfile"
+			}],
+
+			"targets": {
+				"home": {
+					"viewName": "Home",
+					"viewId": "Home"
+				},
+				"detail1": {
+					"viewName": "Detail1",
+					"viewId": "Detail1"
+				},
+				"detail2": {
+					"viewName": "Detail2",
+					"viewId": "Detail2"
+				},
+				
+				"detail3":{
+					"viewName":"Detail3",
+					"viewId":"Detail3"
+				},
+				"ChatBot": {
+					"viewName": "ChatBotView",
+					"viewId": "ChatBot"
+				},
+				"MyProfile":{
+					"viewName":"Profile",
+					"viewId":"Profile"
+				}
+			}
+		}
+	}
+}

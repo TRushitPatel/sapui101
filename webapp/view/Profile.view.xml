@@ -1,0 +1,29 @@
+<mvc:View controllerName="sapui101sapui101.controller.Profile" xmlns:mvc="sap.ui.core.mvc" xmlns:core="sap.ui.core" xmlns:t="sap.ui.table"
+	xmlns="sap.m">
+	<Page showHeader="false">
+		<content>
+			<t:TreeTable id="id_TreeTable" rows="{ path:'/', parameter:{ arrayNames:['details'] } }">
+				<t:columns>
+					<t:Column>
+						<Label text="Info"/>
+						<t:template>
+							<Text text="{Info}"/>
+						</t:template>
+					</t:Column>
+					<t:Column>
+						<Label text="Value"/>
+						<t:template>
+							<Text text="{Value}"/>
+						</t:template>
+					</t:Column>
+					<t:Column>
+						<Label text="Action"/>
+						<t:template>
+							<Button text="{Action}" visible="{= ${Action} ? true : false}" class="btn"/>
+						</t:template>
+					</t:Column>
+				</t:columns>
+			</t:TreeTable>
+		</content>
+	</Page>
+</mvc:View>

@@ -1,0 +1,16 @@
+<core:FragmentDefinition xmlns:core="sap.ui.core" xmlns="sap.m">
+	
+	<CustomListItem id="id_buttonListItem">
+		<HBox>
+			<Text text="this is a button list item"/>
+			<HBox>
+				<Button text="1"></Button>
+				<Button text="2"></Button>
+				<Button text="3"></Button>
+				<Button text="4"></Button>
+			</HBox>
+		</HBox>
+	</CustomListItem>
+		
+	
+</core:FragmentDefinition>
